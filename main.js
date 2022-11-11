@@ -11,6 +11,21 @@ var root = new Vue({
     
     el:'#root',
     data: {
-        album: [foto1, foto2, foto3, foto4],
+        album: ["./img/img1.jpg", "./img/img2.jpg"],
+        indice: 0,
+    },
+    methods: {
+        cambiaOggettoRight: function(){
+            this.indice++;
+            if( this.indice > this.album.length - 1){
+                return this.indice = 0
+            }
+        },
+        cambiaOggettoLeft: function(){
+            this.indice++;
+            if( this.indice > this.album.length - 1){
+                return this.indice = 0
+            }
+        }
     }
 });

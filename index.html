@@ -12,17 +12,17 @@
     <div id="root" >
         <div id="leftArrow" >
             <!-- feccia sinistra -->
-            <button>Left Arrow</button>
+            <button @click="cambiaOggettoLeft">Left Arrow</button>
         </div>
         <div id="carousel" >
             <!-- carosello -->
             <div id="contentCarousel" class="bg-pink">
-
+                <img :src="album[indice]" alt="">
             </div>
         </div>
         <div id="rightArrow" >
             <!-- feccia destra -->
-            <button>Right Arrow</button>
+            <button @click="cambiaOggettoRight">Right Arrow</button>
         </div>
     </div>
 
